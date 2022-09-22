@@ -9,10 +9,23 @@ import Cocoa
 
 class MedsViewController: NSViewController {
 
+    @IBOutlet var textLabel: NSTextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
+}
+
+extension MedsViewController {
+  @IBAction func previous(_ sender: NSButton) {
+  }
+
+  @IBAction func next(_ sender: NSButton) {
+  }
+
+  @IBAction func quit(_ sender: NSButton) {
+  }
 }
 
 extension MedsViewController {
