@@ -25,7 +25,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusButton.image = NSImage(systemSymbolName: "pills.fill", accessibilityDescription: "Pills")
             statusButton.action = #selector(showMeds)
         }
-        
+        constructMenu()
+
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -36,6 +37,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         return true
     }
 
+    func constructMenu() {
+      let menu = NSMenu()
 
+      menu.addItem(NSMenuItem(title: "Show Meds", action: #selector(AppDelegate.showMeds(_:)), keyEquivalent: "P"))
+      menu.addItem(NSMenuItem.separator())
+      menu.addItem(NSMenuItem(title: "Quit Med Showing", action: #selector(NSApplication.terminate(_:)), keyEquivalent: "q"))
+
+      statusItem.menu = menu
+    }
 }
 
