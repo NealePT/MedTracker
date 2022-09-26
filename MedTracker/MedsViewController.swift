@@ -16,16 +16,16 @@ class MedsViewController: NSViewController {
         currentMedIndex = 0
     }
     
-    func updateMed() {
-        textLabel.stringValue = String(describing: meds[currentMedIndex])
-    }
-    
     let meds = Meds.all
     
     var currentMedIndex: Int = 0 {
         didSet {
             updateMed()
         }
+    }
+    
+    func updateMed() {
+        textLabel.stringValue = String(describing: meds[currentMedIndex])
     }
 }
 
