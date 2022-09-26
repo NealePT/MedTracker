@@ -13,29 +13,29 @@ class MedsViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-//        currentMedIndex = 0
+        currentMedIndex = 0
     }
     
-//    let meds = Meds.all
-//
-//    var currentMedIndex: Int = 0 {
-//        didSet {
-//            updateMed()
-//        }
-//    }
-//
-//    func updateMed() {
-//        textLabel.stringValue = String(describing: meds[currentMedIndex])
-//    }
+    let meds = Meds.all
+
+    var currentMedIndex: Int = 0 {
+        didSet {
+            updateMed()
+        }
+    }
+
+    func updateMed() {
+        textLabel.stringValue = String(describing: meds[currentMedIndex])
+    }
 }
 
 extension MedsViewController {
   @IBAction func previous(_ sender: NSButton) {
-//      currentMedIndex = (currentMedIndex - 1 + meds.count) % meds.count
+      currentMedIndex = (currentMedIndex - 1 + meds.count) % meds.count
   }
 
   @IBAction func next(_ sender: NSButton) {
-//      currentMedIndex = (currentMedIndex + 1) % meds.count
+      currentMedIndex = (currentMedIndex + 1) % meds.count
   }
 
   @IBAction func quit(_ sender: NSButton) {
