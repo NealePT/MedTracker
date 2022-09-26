@@ -22,6 +22,6 @@ struct Meds {
 
 extension Meds: CustomStringConvertible {
   var description: String {
-    return "\"\(med)\" — \(time)"
+    return "\(med) — \(time)"
   }
 }
