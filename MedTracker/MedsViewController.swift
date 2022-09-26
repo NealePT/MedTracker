@@ -15,6 +15,14 @@ class MedsViewController: NSViewController {
         super.viewDidLoad()
         // Do view setup here.
     }
+    
+    let meds = Meds.all
+    
+    var currentMedIndex: Int = 0 {
+        didSet {
+            updateMed()
+        }
+    }
 }
 
 extension MedsViewController {
