@@ -13,7 +13,11 @@ class MedsViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do view setup here.
+        currentMedIndex = 0
+    }
+    
+    func updateMed() {
+        textLabel.stringValue = String(describing: meds[currentMedIndex])
     }
     
     let meds = Meds.all
