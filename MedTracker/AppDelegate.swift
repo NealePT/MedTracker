@@ -46,7 +46,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             statusButton.action = #selector(togglePopover(_:))
         }
         popover.contentViewController = MedsViewController.freshController()
-
+        
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -66,5 +66,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
       statusItem.menu = menu
     }
+    
+    var eventMonitor: EventMonitor?
+
 }
 
