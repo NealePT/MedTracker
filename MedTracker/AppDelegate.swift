@@ -47,6 +47,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         popover.contentViewController = MedsViewController.freshController()
         
+        eventMonitor = EventMonitor(mask: [.leftMouseDown, .rightMouseDown]) { [weak self] event in
+          if let strongSelf = self, strongSelf.popover.isShown {
+            strongSelf.closePopover(sender: event)
+          }
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
