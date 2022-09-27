@@ -11,6 +11,22 @@ class MedsViewController: NSViewController {
 
     @IBOutlet var textLabel: NSTextField!
 
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        currentMedIndex = 0
+//    }
+//
+//    let meds = Meds.all
+//
+//    var currentMedIndex: Int = 0 {
+//        didSet {
+//            updateMed()
+//        }
+//    }
+//
+//    func updateMed() {
+//        textLabel.stringValue = String(describing: meds[currentMedIndex])
+//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         currentMedIndex = 0
@@ -25,7 +41,7 @@ class MedsViewController: NSViewController {
     }
 
     func updateMed() {
-        textLabel.stringValue = String(describing: meds[currentMedIndex])
+        textLabel.stringValue = String(describing: meds)
     }
 }
 
