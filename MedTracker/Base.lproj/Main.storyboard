@@ -722,7 +722,7 @@
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lh1-7s-hIL">
-                                <rect key="frame" x="94" y="130" width="289" height="16"/>
+                                <rect key="frame" x="94" y="97" width="289" height="82"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="YUZ-eb-9g6">
                                     <font key="font" metaFont="system"/>
