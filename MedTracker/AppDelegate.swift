@@ -33,12 +33,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popover.show(relativeTo: button.bounds, of: button, preferredEdge: NSRectEdge.minY)
       }
         
-        eventMonitor?.start()
+      eventMonitor?.start()
     }
 
 
     func closePopover(sender: Any?) {
       popover.performClose(sender)
+        
+      eventMonitor?.stop()
     }
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
