@@ -6,12 +6,13 @@
 //
 
 import Cocoa
-
+import SwiftUI
 class MedsViewController: NSViewController {
 
     @IBOutlet var textLabel: NSTextField!
 
-//    override func viewDidLoad() {
+
+    //    override func viewDidLoad() {
 //        super.viewDidLoad()
 //        currentMedIndex = 0
 //    }
@@ -25,7 +26,6 @@ class MedsViewController: NSViewController {
 //    }
 //
 //    func updateMed() {
-//        textLabel.stringValue = String(describing: meds[currentMedIndex])
 //    }
     override func viewDidLoad() {
         super.viewDidLoad()
