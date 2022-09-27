@@ -8,20 +8,20 @@
 import Foundation
 
 struct Meds {
-  let med: String
+  let name: String
   let time: String
   
   static let all: [Meds] =  [
-    Meds(med: "Concerta 18mg", time: "9am"),
-    Meds(med: "Vitamin D", time: "8am"),
-    Meds(med: "Vitamin C", time: "8am"),
-    Meds(med: "Creatine", time: "5pm"),
-    Meds(med: "Protein Suplement", time: "5pm"),
+    Meds(name: "Concerta 18mg", time: "9am"),
+    Meds(name: "Vitamin D", time: "8am"),
+    Meds(name: "Vitamin C", time: "8am"),
+    Meds(name: "Creatine", time: "5pm"),
+    Meds(name: "Protein Suplement", time: "5pm"),
   ]
 }
 
 extension Meds: CustomStringConvertible {
   var description: String {
-    return "\(med) — \(time)"
+    return "\(name) — \(time)"
   }
 }
