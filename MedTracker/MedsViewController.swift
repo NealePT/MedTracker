@@ -25,14 +25,6 @@ class MedsViewController: NSViewController {
 }
 
 extension MedsViewController {
-//  @IBAction func previous(_ sender: NSButton) {
-//      currentMedIndex = (currentMedIndex - 1 + meds.count) % meds.count
-//  }
-//
-//  @IBAction func next(_ sender: NSButton) {
-//      currentMedIndex = (currentMedIndex + 1) % meds.count
-//  }
-
   @IBAction func quit(_ sender: NSButton) {
       NSApplication.shared.terminate(sender)
   }
