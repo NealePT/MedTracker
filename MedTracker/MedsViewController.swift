@@ -11,22 +11,6 @@ class MedsViewController: NSViewController {
 
     @IBOutlet var textLabel: NSTextField!
 
-
-    //    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        currentMedIndex = 0
-//    }
-//
-//    let meds = Meds.all
-//
-//    var currentMedIndex: Int = 0 {
-//        didSet {
-//            updateMed()
-//        }
-//    }
-//
-//    func updateMed() {
-//    }
     override func viewDidLoad() {
         super.viewDidLoad()
         displayMed()
