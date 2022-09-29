@@ -10,15 +10,16 @@ import Cocoa
 class MedsViewController: NSViewController {
 
     @IBOutlet var textLabel: NSTextField!
-
+    @IBOutlet weak var tableView: NSTableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.delegate = self
+//        tableView.delegate = self
         tableView.dataSource = self
         displayMed()
     }
     
-    let meds = Meds.all
+    let meds = Meds.self
 
 
     func displayMed() {

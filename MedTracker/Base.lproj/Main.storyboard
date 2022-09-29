@@ -840,6 +840,7 @@
                         </subviews>
                     </view>
                     <connections>
+                        <outlet property="tableView" destination="wYS-Hb-OYz" id="7aQ-1c-d9T"/>
                         <outlet property="textLabel" destination="Lh1-7s-hIL" id="9wN-gY-NCD"/>
                     </connections>
                 </viewController>
