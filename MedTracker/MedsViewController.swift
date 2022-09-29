@@ -13,6 +13,8 @@ class MedsViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        tableView.delegate = self
+//        tableView.dataSource = self
         displayMed()
     }
     
@@ -43,5 +45,5 @@ extension MedsViewController {
 }
 
 extension MedsViewController: NSTableViewDataSource {
-    
+
 }
