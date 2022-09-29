@@ -7,21 +7,23 @@
 
 import Foundation
 
-struct Meds {
-  let name: String
-  let time: String
-  
-  static let all: [Meds] =  [
-    Meds(name: "Concerta 18mg", time: "9am"),
-    Meds(name: "Vitamin D", time: "8am"),
-    Meds(name: "Vitamin C", time: "8am"),
-    Meds(name: "Creatine", time: "5pm"),
-    Meds(name: "Protein Suplement", time: "5pm"),
-  ]
+struct Meds: Codable {
+//  let name: String
+//  let time: String
+//
+//  static let all: [Meds] =  [
+//    Meds(name: "Concerta 18mg", time: "9am"),
+//    Meds(name: "Vitamin D", time: "8am"),
+//    Meds(name: "Vitamin C", time: "8am"),
+//    Meds(name: "Creatine", time: "5pm"),
+//    Meds(name: "Protein Suplement", time: "5pm"),
+//  ]
+    var name: String
+    var time: String
 }
 
-extension Meds: CustomStringConvertible {
-  var description: String {
-    return "\(name) — \(time)"
-  }
-}
+//extension Meds: CustomStringConvertible {
+//  var description: String {
+//    return "\(name) — \(time)"
+//  }
+//}
