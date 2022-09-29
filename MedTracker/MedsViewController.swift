@@ -41,3 +41,7 @@ extension MedsViewController {
     return viewcontroller
   }
 }
+
+extension MedsViewController: NSTableViewDataSource {
+    
+}
