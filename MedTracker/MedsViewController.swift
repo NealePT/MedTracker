@@ -19,8 +19,8 @@ class MedsViewController: NSViewController {
         displayMed()
     }
     
-    let meds = Meds.self
-
+    let meds = Meds.all
+    
 
     func displayMed() {
         textLabel.stringValue = String(describing: meds)
@@ -46,5 +46,7 @@ extension MedsViewController {
 }
 
 extension MedsViewController: NSTableViewDataSource {
-
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return meds.count
+    }
 }
