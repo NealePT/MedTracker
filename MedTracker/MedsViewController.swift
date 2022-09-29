@@ -6,7 +6,7 @@
 //
 
 import Cocoa
-import SwiftUI
+
 class MedsViewController: NSViewController {
 
     @IBOutlet var textLabel: NSTextField!
