@@ -50,3 +50,7 @@ extension MedsViewController: NSTableViewDataSource {
         return meds.count
     }
 }
+
+extension MedsViewController: NSTableViewDelegate {
+    
+}
