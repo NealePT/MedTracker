@@ -9,14 +9,12 @@ import Cocoa
 
 class MedsViewController: NSViewController {
 
-    @IBOutlet var textLabel: NSTextField!
     @IBOutlet weak var tableView: NSTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        displayMed()
     }
     
     override func viewWillAppear() {
@@ -26,10 +24,6 @@ class MedsViewController: NSViewController {
     
     let meds = Meds.all
     
-
-    func displayMed() {
-        textLabel.stringValue = String(describing: meds)
-    }
 }
 
 extension MedsViewController {
