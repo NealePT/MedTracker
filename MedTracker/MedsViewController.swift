@@ -51,6 +51,9 @@ extension MedsViewController: NSTableViewDataSource {
 }
 
 extension MedsViewController: NSTableViewDelegate {
+    func tableView(_ tableView: NSTableView, heightOfRow row: Int) -> CGFloat {
+        return 21.0
+    }
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let currentMed = meds[row]
         
