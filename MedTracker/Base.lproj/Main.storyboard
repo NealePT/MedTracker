@@ -736,7 +736,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="k7R-9u-YAN">
+                                                        <tableCellView identifier="idCell" id="k7R-9u-YAN">
                                                             <rect key="frame" x="8" y="0.0" width="28" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -768,7 +768,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="mf5-wK-RXO">
+                                                        <tableCellView identifier="medicationCell" id="mf5-wK-RXO">
                                                             <rect key="frame" x="53" y="0.0" width="171" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -800,7 +800,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="KCN-N7-PpD">
+                                                        <tableCellView identifier="timeCell" id="KCN-N7-PpD">
                                                             <rect key="frame" x="241" y="0.0" width="124" height="24"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -832,7 +832,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="ibM-98-IvY">
+                                                        <tableCellView identifier="completedCell" id="ibM-98-IvY">
                                                             <rect key="frame" x="382" y="0.0" width="47" height="29"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
