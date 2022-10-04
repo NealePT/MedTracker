@@ -55,6 +55,14 @@ extension MedsViewController: NSTableViewDelegate {
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView? {
         let currentMed = meds[row]
         
+        if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "idColumn") {
+            
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "medicationColumn") {
+            
+        } else {
+            
+        }
+        
         return nil
     }
 }
