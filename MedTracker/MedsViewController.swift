@@ -56,12 +56,14 @@ extension MedsViewController: NSTableViewDelegate {
         let currentMed = meds[row]
         
         if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "idColumn") {
+            
             let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "idCell")
             guard let cellView = tableView.makeView(withIdentifier: cellIdentifier, owner: self) as? NSTableCellView else { return nil }
             cellView.textField?.integerValue = currentMed.id ?? 0
             return cellView
             
         } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "medicationColumn") {
+            
             
         } else {
             
