@@ -19,6 +19,10 @@ class MedsViewController: NSViewController {
         displayMed()
     }
     
+    override func viewWillAppear() {
+
+    }
+    
     let meds = Meds.all
     
 
