@@ -20,7 +20,8 @@ class MedsViewController: NSViewController {
     }
     
     override func viewWillAppear() {
-
+        super.viewWillAppear()
+        tableView.reloadData()
     }
     
     let meds = Meds.all
