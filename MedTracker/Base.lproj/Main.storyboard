@@ -700,15 +700,6 @@
                                     <action selector="quit:" target="XfG-lQ-9wD" id="IhO-9A-HXQ"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lh1-7s-hIL">
-                                <rect key="frame" x="96" y="65" width="289" height="52"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" selectable="YES" alignment="center" title="Multiline Label" id="YUZ-eb-9g6">
-                                    <font key="font" metaFont="system"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="24" horizontalPageScroll="10" verticalLineScroll="24" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS7-u9-e1h">
                                 <rect key="frame" x="20" y="125" width="440" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -873,7 +864,6 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="wYS-Hb-OYz" id="7aQ-1c-d9T"/>
-                        <outlet property="textLabel" destination="Lh1-7s-hIL" id="9wN-gY-NCD"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
