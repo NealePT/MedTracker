@@ -68,6 +68,13 @@ extension MedsViewController: NSTableViewDelegate {
             cellView.textField?.stringValue = currentMed.name
             return cellView
             
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "timeColumn") {
+            
+            let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "timeCell")
+            guard let cellView = tableView.makeView(withIdentifier: cellIdentifier, owner: self) as? NSTableCellView else { return nil }
+            cellView.textField?.stringValue = currentMed.time
+            return cellView
+            
         } else {
             
         }
