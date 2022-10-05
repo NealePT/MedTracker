@@ -82,7 +82,7 @@ extension MedsViewController: NSTableViewDelegate {
             
             let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "completedCell")
             guard let cellView = tableView.makeView(withIdentifier: cellIdentifier, owner: self) as? NSTableCellView else { return nil }
-//            cellView.textField?.stringValue = currentMed.time
+//            cellView.textField?.stringValue = currentMed.completed
             return cellView
         
         }
