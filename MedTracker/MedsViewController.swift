@@ -78,7 +78,7 @@ extension MedsViewController: NSTableViewDelegate {
             cellView.textField?.stringValue = currentMed.time
             return cellView
             
-        } else {
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "completedColumn") {
             
             let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "completedCell")
             guard let cellView = tableView.makeView(withIdentifier: cellIdentifier, owner: self) as? NSTableCellView else { return nil }
@@ -86,5 +86,6 @@ extension MedsViewController: NSTableViewDelegate {
             return cellView
         
         }
+        return nil
     }
 }
