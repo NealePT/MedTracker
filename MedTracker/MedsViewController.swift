@@ -86,7 +86,5 @@ extension MedsViewController: NSTableViewDelegate {
             return cellView
         
         }
-        
-        return nil
     }
 }
