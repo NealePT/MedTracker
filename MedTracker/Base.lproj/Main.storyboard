@@ -828,9 +828,9 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XkP-EK-ueH">
-                                                                    <rect key="frame" x="1" y="2" width="65" height="18"/>
+                                                                    <rect key="frame" x="1" y="2" width="62" height="18"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <buttonCell key="cell" type="check" title="Check" bezelStyle="regularSquare" imagePosition="left" inset="2" id="eYv-lI-fTY">
+                                                                    <buttonCell key="cell" type="check" title="Taken" bezelStyle="regularSquare" imagePosition="left" inset="2" id="eYv-lI-fTY">
                                                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
