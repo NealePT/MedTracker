@@ -23,9 +23,3 @@ struct Meds: Codable {
     Meds(id: 7, name: "Protein Supplement", time: "5pm", taken: false)
   ]
 }
-
-//extension Meds: CustomStringConvertible {
-//  var description: String {
-//    return "\(name) — \(time)"
-//  }
-//}
