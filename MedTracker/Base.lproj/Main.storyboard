@@ -823,7 +823,7 @@
                                                     </textFieldCell>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView identifier="completedCell" id="ibM-98-IvY">
+                                                        <tableCellView identifier="takenCell" id="ibM-98-IvY">
                                                             <rect key="frame" x="361" y="0.0" width="68" height="21"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
