@@ -78,11 +78,11 @@ extension MedsViewController: NSTableViewDelegate {
             cellView.textField?.stringValue = currentMed.time
             return cellView
             
-        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "completedColumn") {
+        } else if tableColumn?.identifier == NSUserInterfaceItemIdentifier(rawValue: "takenColumn") {
             
-            let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "completedCell")
+            let cellIdentifier = NSUserInterfaceItemIdentifier(rawValue: "takenCell")
             guard let cellView = tableView.makeView(withIdentifier: cellIdentifier, owner: self) as? NSTableCellView else { return nil }
-//            cellView.textField?.stringValue = currentMed.completed
+//            cellView.textField?.stringValue = currentMed.taken
             return cellView
         
         }
