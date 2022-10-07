@@ -7,3 +7,4 @@ This is a project I created for the purpose of remembering to take various medic
 *The app being launched and used*
 
 
+![Screen Recording 2022-10-07 at 10 34 11 AM](https://user-images.githubusercontent.com/89871393/194582577-6f5e1521-c142-4e4a-bc91-293d2b852eeb.gif)
