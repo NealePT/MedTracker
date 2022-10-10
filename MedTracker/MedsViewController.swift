@@ -30,7 +30,9 @@ extension MedsViewController {
   @IBAction func quit(_ sender: NSButton) {
       NSApplication.shared.terminate(sender)
   }
-    
+}
+
+extension MedsViewController {
     @IBAction func add(_ sender: NSButton) {
         
     }
