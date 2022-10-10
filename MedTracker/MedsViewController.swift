@@ -34,7 +34,7 @@ extension MedsViewController {
 
 extension MedsViewController {
     @IBAction func add(_ sender: NSButton) {
-        
+
     }
 }
 
